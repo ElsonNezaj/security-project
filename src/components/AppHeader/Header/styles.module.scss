@@ -1,0 +1,32 @@
+.headerContainer {
+  height: 125px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.flexHeaderContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.userContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.navigationContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
