@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Box } from "@mui/material";
 import NavigationLinks from "../NavigationLinks";
+import Login from "../Login";
 
 function AppHeader() {
   return (
@@ -12,7 +13,9 @@ function AppHeader() {
         <Box className={styles.navigationContainer}>
           <NavigationLinks />
         </Box>
-        <Box className={styles.userContainer}>USER</Box>
+        <Box className={styles.userContainer}>
+          <Login />
+        </Box>
       </Box>
     </Box>
   );
