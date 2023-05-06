@@ -12,19 +12,20 @@
 }
 
 .navigationButton {
-  font-family: "Orbitron", sans-serif;
-  background-color: none;
-  &:hover {
-    background-color: none;
+  background-color: none !important;
+
+  .navigationLabel {
+    font-family: "Orbitron", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px;
+    color: white;
+    transition: all 0.3s;
   }
-}
-
-.navigationLabel {
-  font-family: "Orbitron", sans-serif;
-  color: white;
-  transition: all 0.3s;
 
   &:hover {
-    color: #a8243c;
+    background-color: none !important;
+    .navigationLabel {
+      color: #a8243c;
+    }
   }
 }
