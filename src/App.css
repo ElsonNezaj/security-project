@@ -2,3 +2,10 @@
   height: 100%;
   width: 100%;
 }
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:hover:not(
+    .Mui-disabled,
+    .Mui-error
+  ):before {
+  border-bottom: none;
+}
