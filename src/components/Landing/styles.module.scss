@@ -1,0 +1,23 @@
+.landingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 50%;
+  display: flex;
+  margin-left: 100px;
+}
+
+.ladyJustice {
+  width: 100%;
+  filter: invert(100%);
+}
+
+.ladingText {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}

@@ -29,28 +29,6 @@
     font-size: 90px;
     color: white;
   }
-  .inputField {
-    color: white;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    & > div {
-      &::before {
-        border-bottom: solid 2px #103536;
-      }
-
-      &:hover {
-        border-bottom: solid 1px transparent;
-      }
-      input {
-        color: white;
-        font-family: "Orbitron", sans-serif !important;
-        font-size: 16px;
-      }
-    }
-  }
 
   .submitButton {
     background-color: transparent;
@@ -63,6 +41,28 @@
     &:hover {
       background-color: #144647;
       width: 150px;
+    }
+  }
+}
+.inputField {
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & > div {
+    &::before {
+      border-bottom: solid 2px #103536;
+    }
+
+    &:hover {
+      border-bottom: solid 1px transparent;
+    }
+    input {
+      color: white !important;
+      font-family: "Orbitron", sans-serif !important;
+      font-size: 16px;
     }
   }
 }
