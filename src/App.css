@@ -1,3 +1,11 @@
+:root {
+  --main-color: #70380f;
+  --dark-text-color: #4e2c0b;
+  --heading-color: #ffe3c8;
+  --light-background-color: #ffc791;
+  --text-color: #fff;
+}
+
 .App {
   height: 100%;
   width: 100%;

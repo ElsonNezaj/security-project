@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+
+.loginSignupContainter {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #9b592a, #704111);
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  font-size: 50px !important;
+  font-family: "Castoro Titling", cursive !important;
+  color: var(--heading-color);
+}
