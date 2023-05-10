@@ -7,13 +7,7 @@
 }
 
 .App {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-}
-
-.css-v4u5dn-MuiInputBase-root-MuiInput-root:hover:not(
-    .Mui-disabled,
-    .Mui-error
-  ):before {
-  border-bottom: none;
+  font-family: "Times New Roman", Times, serif;
 }
