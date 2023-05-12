@@ -3,6 +3,7 @@ import React from "react";
 import logo from "../../images/mainimg.png";
 import styles from "./styles.module.scss";
 import { Box, Paper, Typography } from "@mui/material";
+import Navigation from "./Navigation";
 
 function ContentGrid() {
   return (
@@ -14,7 +15,9 @@ function ContentGrid() {
           <Typography className={styles.subTitle}>Project</Typography>
         </Box>
       </Box>
-      <Box className={styles.navigationContainer}></Box>
+      <Box className={styles.navigationContainer}>
+        <Navigation />
+      </Box>
     </Paper>
   );
 }

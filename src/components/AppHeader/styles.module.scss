@@ -3,6 +3,8 @@
   height: 100px;
   margin: 15px auto;
   border-radius: 30px !important;
+  display: flex;
+  align-items: center;
 }
 
 .logoContainer {
@@ -33,4 +35,9 @@
 .subTitle {
   font-size: 14px !important;
   letter-spacing: 5px !important;
+}
+
+.navigationContainer {
+  width: 50%;
+  height: 100%;
 }

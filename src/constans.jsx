@@ -1,33 +1,17 @@
 export const NAVIGATION_LINKS = [
   {
     label: "Services",
-    children: [
-      {
-        label: "Workgroup",
-      },
-      {
-        label: "Career",
-      },
-      {
-        label: "About Us",
-      },
-    ],
+    id: 1,
+    children: ["Workgroup", "Career", "About Us"],
   },
   {
     label: "Case Study",
-    children: [
-      {
-        label: "How We Work",
-      },
-      {
-        label: "Collaborations",
-      },
-      {
-        label: "Become an Investigator",
-      },
-    ],
+    id: 2,
+    children: ["How We Work", "Collaborations", "Become an Investigator"],
   },
   {
     label: "Contact Us",
+    id: 3,
+    children: [],
   },
 ];

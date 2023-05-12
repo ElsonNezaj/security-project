@@ -1,1 +1,41 @@
-  
+.navigationContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navLink {
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  outline: 1px solid rgba(0, 0, 0, 0.158);
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.underline {
+  outline: 1px solid black;
+}
+
+.button {
+  font-size: 18px;
+  color: white !important;
+  border-radius: 10px !important;
+  height: max-content;
+  padding: 8px;
+  font-family: inherit;
+  font-weight: lighter;
+  background-color: #4f4537 !important;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
