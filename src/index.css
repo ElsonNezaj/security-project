@@ -7,7 +7,6 @@ body {
   background: linear-gradient(to right bottom, #fff, rgb(202, 202, 202));
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 code {

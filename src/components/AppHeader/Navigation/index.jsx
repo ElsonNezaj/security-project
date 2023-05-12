@@ -40,21 +40,30 @@ function Navigation() {
       <Paper elevation={3} className={styles.button}>
         Report
       </Paper>
-
-      <Menu
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        className={styles.menu}
-      >
-        {NAVIGATION_LINKS.filter((item) => item.id === hoverItem).map((item) =>
-          item.children.map((child) => (
-            <MenuItem divider onClick={handleClose} className={styles.menuItem}>
-              {child}
-            </MenuItem>
-          ))
-        )}
-      </Menu>
+      {NAVIGATION_LINKS.filter((item) => item.id === hoverItem).map(
+        (item) =>
+          item.children.length > 0 && (
+            <Menu
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              className={styles.menu}
+            >
+              {NAVIGATION_LINKS.filter((item) => item.id === hoverItem).map(
+                (item) =>
+                  item.children.map((child) => (
+                    <MenuItem
+                      divider
+                      onClick={handleClose}
+                      className={styles.menuItem}
+                    >
+                      {child}
+                    </MenuItem>
+                  ))
+              )}
+            </Menu>
+          )
+      )}
     </Box>
   );
 }
