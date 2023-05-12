@@ -20,6 +20,7 @@
 
   &:hover {
     cursor: pointer;
+    outline: 1px solid black;
   }
 }
 
@@ -32,10 +33,23 @@
   color: white !important;
   border-radius: 10px !important;
   height: max-content;
-  padding: 8px;
+  padding: 10px;
   font-family: inherit;
   font-weight: lighter;
   background-color: #4f4537 !important;
-  letter-spacing: 3px;
   cursor: pointer;
+}
+
+.menuItem {
+  background-color: none !important;
+  width: 90%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+  margin: 0 5% !important;
+  transition: all 0.3s !important;
+
+  &:hover {
+    background-color: none !important;
+  }
 }
