@@ -1,38 +1,8 @@
 .landingContainer {
   width: 90%;
-  height: 85%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-}
-
-.leftSide {
-  width: 60%;
-}
-
-.rightSide {
-  width: 40%;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.mainTitle {
-  font-size: 36px !important;
-  font-family: inherit;
-  color: #4f4537;
-}
-
-.subtitle {
-  text-align: center;
-  font-size: 22px !important;
-}
-
-.text {
-  margin-top: 20px;
-  text-align: center;
+  height: calc(100vh - 130px);
 }

@@ -7,9 +7,12 @@
 }
 
 .App {
-  height: 100vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 100vh;
   background: linear-gradient(to right bottom, #fff, rgb(202, 202, 202));
   background-repeat: no-repeat;
   background-size: cover;

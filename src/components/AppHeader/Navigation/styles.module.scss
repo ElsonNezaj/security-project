@@ -30,26 +30,26 @@
 
 .button {
   font-size: 18px;
-  color: white !important;
-  border-radius: 10px !important;
+  color: white;
+  border-radius: 10px;
   height: max-content;
   padding: 10px;
   font-family: inherit;
   font-weight: lighter;
-  background-color: #4f4537 !important;
+  background-color: #4f4537;
   cursor: pointer;
 }
 
 .menuItem {
-  background-color: none !important;
+  background-color: none;
   width: 90%;
-  display: flex !important;
+  display: flex;
   align-items: center;
-  justify-content: center !important;
-  margin: 0 5% !important;
-  transition: all 0.3s !important;
+  justify-content: center;
+  margin: 0 5%;
+  transition: all 0.3s;
 
   &:hover {
-    background-color: none !important;
+    background-color: none;
   }
 }
