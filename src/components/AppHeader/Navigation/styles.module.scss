@@ -41,6 +41,7 @@
 }
 
 .menuItem {
+  color: black;
   background-color: none;
   width: 90%;
   display: flex;
@@ -52,4 +53,10 @@
   &:hover {
     background-color: none;
   }
+}
+
+.user {
+  font-family: inherit;
+  color: #4f4537;
+  font-size: 20px;
 }
