@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 import { Box, Button, Paper, Typography } from "@mui/material";
@@ -16,9 +17,11 @@ function IntroductionPage() {
               <Button variant="outlined" className={styles.loginButton}>
                 Login
               </Button>
-              <Button variant="contained" className={styles.signUpButton}>
-                Create an Account
-              </Button>
+              <Link to="/create-account">
+                <Button variant="contained" className={styles.signUpButton}>
+                  Create an Account
+                </Button>
+              </Link>
             </Box>
           </Box>
           <Box className={styles.emergencyContainer}>
