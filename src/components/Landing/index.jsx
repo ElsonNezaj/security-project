@@ -1,10 +1,8 @@
 import React, { Suspense, lazy } from "react";
-// import {  } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 import { Box } from "@mui/material";
-// import IntroductionPage from "../IntroductionPage";
 
 const IntroductionPage = lazy(() => import("../IntroductionPage"));
 
