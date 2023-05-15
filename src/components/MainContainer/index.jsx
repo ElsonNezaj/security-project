@@ -5,12 +5,14 @@ import { Box } from "@mui/material";
 import styles from "./styles.module.scss";
 import Appheader from "../AppHeader";
 import Landing from "../Landing";
+import MainDialog from "../DIalog";
 
 function MainContainer() {
   return (
     <Box className={styles.mainContainer}>
       <Appheader />
       <Landing />
+      <MainDialog />
     </Box>
   );
 }

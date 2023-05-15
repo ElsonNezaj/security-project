@@ -13,7 +13,7 @@ const CreateAccountPage = lazy(() => import("../CreateAccount"));
 const Workgroup = lazy(() => import("../Workgroup"));
 
 function Landing() {
-  const userCredentials = useSelector((state) => state.auth.userCredentials);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   const handleMenuPath = (path) => {
     switch (path) {
@@ -35,14 +35,12 @@ function Landing() {
           <Route
             exact
             path="/login"
-            element={userCredentials ? <Navigate to="/" /> : <Login />}
+            element={isLoggedIn ? <Navigate to="/" /> : <Login />}
           />
           <Route
             exact
             path="/create-account"
-            element={
-              userCredentials ? <Navigate to="/" /> : <CreateAccountPage />
-            }
+            element={isLoggedIn ? <Navigate to="/" /> : <CreateAccountPage />}
           />
           {NAVIGATION_LINKS.map((item) =>
             item.children.map((child) => (

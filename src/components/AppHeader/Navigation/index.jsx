@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   const userCredentials = useSelector((state) => state.auth.userCredentials);
+  const isLoggedId = useSelector((state) => state.auth.isLoggedId);
   const [hoverItem, setHoverItem] = useState(undefined);
   const [anchorEl, setAnchorEl] = useState(undefined);
   const open = Boolean(anchorEl);
@@ -40,9 +41,11 @@ function Navigation() {
           </Typography>
         </>
       ))}
-      <Paper elevation={3} className={styles.button}>
-        Report
-      </Paper>
+      {!userCredentials && (
+        <Paper elevation={3} className={styles.button}>
+          Report
+        </Paper>
+      )}
       {userCredentials && (
         <Typography className={styles.user}>
           {userCredentials.firstName}&nbsp;{userCredentials.lastName}

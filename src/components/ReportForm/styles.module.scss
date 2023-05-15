@@ -1,0 +1,38 @@
+.reportFormContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.reportTitle {
+  font-size: 32px;
+  font-family: inherit;
+  color: #4f4537;
+  text-align: center;
+}
+
+.reportForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.submitButton {
+  font-family: inherit;
+  font-size: 18px;
+  color: #4f4537;
+  outline: solid 1px rgba(0, 0, 0, 0.108);
+  margin-top: 20px;
+  transition: all 0.3s;
+
+  &:hover {
+    outline: none;
+    background-color: #4f4537;
+    color: white;
+    transform: translateY(-5px);
+  }
+}
