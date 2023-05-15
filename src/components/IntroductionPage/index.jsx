@@ -14,9 +14,11 @@ function IntroductionPage() {
               Login or Create an Account
             </Typography>
             <Box className={styles.authButtons}>
-              <Button variant="outlined" className={styles.loginButton}>
-                Login
-              </Button>
+              <Link to="/login">
+                <Button variant="outlined" className={styles.loginButton}>
+                  Login
+                </Button>
+              </Link>
               <Link to="/create-account">
                 <Button variant="contained" className={styles.signUpButton}>
                   Create an Account

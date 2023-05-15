@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import { useSelector } from "react-redux";
 import { NAVIGATION_LINKS } from "../../constans";
 import { Typography } from "antd";
+import Login from "../Login";
 
 const IntroductionPage = lazy(() => import("../IntroductionPage"));
 const CreateAccountPage = lazy(() => import("../CreateAccount"));
@@ -31,6 +32,11 @@ function Landing() {
       <Suspense fallback={null}>
         <Routes>
           <Route exact path="/" element={<IntroductionPage />} />
+          <Route
+            exact
+            path="/login"
+            element={userCredentials ? <Navigate to="/" /> : <Login />}
+          />
           <Route
             exact
             path="/create-account"
