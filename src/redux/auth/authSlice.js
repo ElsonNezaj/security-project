@@ -9,10 +9,6 @@ export const authSlice = createSlice({
   name: "authSlice",
   initialState,
   reducers: {
-    handleLoginDialog: (state, action) => {
-      state.isLoginDialogVisible = action.payload;
-    },
-
     handleCreateAccount: (state, action) => {
       state.userCredentials = action.payload;
       localStorage.setItem(
@@ -35,9 +31,13 @@ export const authSlice = createSlice({
         }
       }
     },
+    handleLogout: (state) => {
+      state.userCredentials = undefined;
+      state.isLoggedIn = false;
+    },
   },
 });
 
-export const { handleLoginDialog, handleLogin, handleCreateAccount } =
+export const { handleLogin, handleCreateAccount, handleLogout } =
   authSlice.actions;
 export default authSlice.reducer;

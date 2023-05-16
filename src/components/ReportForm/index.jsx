@@ -9,7 +9,6 @@ import { handleTiming } from "../../redux/dialog/dialogSlice";
 function ReportForm() {
   const dispatch = useDispatch();
   const userCredentials = useSelector((state) => state.auth.userCredentials);
-  const { firstName, lastName, idNumber, email, phoneNumber } = userCredentials;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,31 +22,42 @@ function ReportForm() {
       </Typography>
       <form onSubmit={(e) => handleSubmit(e)} className={styles.reportForm}>
         <TextField
+          required
           variant="filled"
-          value={firstName}
+          value={userCredentials ? userCredentials.firstName : null}
+          placeholder="First Name"
           className={styles.textField}
         />
         <TextField
+          required
           variant="filled"
-          value={lastName}
+          value={userCredentials ? userCredentials.lastName : null}
+          placeholder="Last Name"
           className={styles.textField}
         />
         <TextField
+          required
           variant="filled"
-          value={idNumber}
+          value={userCredentials ? userCredentials.idNumber : null}
+          placeholder="Identification / ID "
           className={styles.textField}
         />
         <TextField
+          required
           variant="filled"
-          value={email}
+          value={userCredentials ? userCredentials.email : null}
+          placeholder="E-mail"
           className={styles.textField}
         />
         <TextField
+          required
           variant="filled"
-          value={phoneNumber}
+          value={userCredentials ? userCredentials.phoneNumber : null}
+          placeholder="Phone Number"
           className={styles.textField}
         />
         <TextField
+          required
           variant="filled"
           multiline
           placeholder="Describe your problem"

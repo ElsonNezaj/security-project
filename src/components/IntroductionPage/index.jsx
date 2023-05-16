@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 
 import styles from "./styles.module.scss";
 import { Box, Button, Paper, Typography } from "@mui/material";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ReportForm from "../ReportForm";
+import { handleReportDialog } from "../../redux/dialog/dialogSlice";
 
 function IntroductionPage() {
+  const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   return (
     <Box className={styles.introductionContainer}>
@@ -37,6 +39,7 @@ function IntroductionPage() {
               <Button
                 variant="contained"
                 color="error"
+                onClick={() => dispatch(handleReportDialog(true))}
                 className={styles.reportNowButton}
               >
                 Report Now

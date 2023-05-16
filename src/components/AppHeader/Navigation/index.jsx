@@ -4,12 +4,14 @@ import styles from "./styles.module.scss";
 import { Box, Menu, MenuItem, Paper, Typography } from "@mui/material";
 
 import { NAVIGATION_LINKS } from "../../../constans";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { handleReportDialog } from "../../../redux/dialog/dialogSlice";
+import { handleLogout } from "../../../redux/auth/authSlice";
 
 function Navigation() {
+  const dispatch = useDispatch();
   const userCredentials = useSelector((state) => state.auth.userCredentials);
-  const isLoggedId = useSelector((state) => state.auth.isLoggedId);
   const [hoverItem, setHoverItem] = useState(undefined);
   const [anchorEl, setAnchorEl] = useState(undefined);
   const open = Boolean(anchorEl);
@@ -42,12 +44,19 @@ function Navigation() {
         </>
       ))}
       {!userCredentials && (
-        <Paper elevation={3} className={styles.button}>
+        <Paper
+          onClick={() => dispatch(handleReportDialog(true))}
+          elevation={3}
+          className={styles.button}
+        >
           Report
         </Paper>
       )}
       {userCredentials && (
-        <Typography className={styles.user}>
+        <Typography
+          onClick={() => dispatch(handleLogout())}
+          className={styles.user}
+        >
           {userCredentials.firstName}&nbsp;{userCredentials.lastName}
         </Typography>
       )}

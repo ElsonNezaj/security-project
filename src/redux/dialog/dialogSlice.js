@@ -20,6 +20,7 @@ export const dialogSlice = createSlice({
     handleSucceedDialog: (state, action) => {
       state.isSucceedDialog = action.payload;
       state.isDialogOpen = true;
+      state.isTimingTrue = false;
     },
     handleReportDialog: (state, action) => {
       state.isReportDialog = action.payload;

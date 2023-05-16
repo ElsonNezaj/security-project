@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import styles from "./styles.module.scss";
 import Appheader from "../AppHeader";
 import Landing from "../Landing";
-import MainDialog from "../DIalog";
+import MainDialog from "../Dialog";
 
 function MainContainer() {
   return (
