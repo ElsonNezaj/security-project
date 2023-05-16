@@ -13,7 +13,7 @@ function ReportForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(handleTiming);
+    dispatch(handleTiming());
   };
 
   return (

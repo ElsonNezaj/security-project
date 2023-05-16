@@ -34,6 +34,10 @@ export const dialogSlice = createSlice({
   },
 });
 
-export const { handleTiming, handleSucceedDialog, handleReportDialog } =
-  dialogSlice.actions;
+export const {
+  handleTiming,
+  handleSucceedDialog,
+  handleReportDialog,
+  closeDialog,
+} = dialogSlice.actions;
 export default dialogSlice.reducer;

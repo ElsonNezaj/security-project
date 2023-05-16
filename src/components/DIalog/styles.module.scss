@@ -1,0 +1,17 @@
+.dialogContent {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeIcon {
+  font-size: 26px;
+  // position: absolute;
+  // right: 30px;
+  // top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
